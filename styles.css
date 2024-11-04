@@ -13,7 +13,7 @@ h1 {
     font-family: 'Matemasie', cursive;
     color: hotpink;
     margin: 20px auto;
-    padding: 150px 0px 0px 0px;
+    padding: 20px;
     text-align: center;
     max-width: 1300px;
     min-width: 550px;
@@ -69,7 +69,6 @@ th {
     padding: 20px;
     max-width: 1300px;
     min-width: 550px;
-    position: fixed;
     opacity: 0.9;
 }
 
