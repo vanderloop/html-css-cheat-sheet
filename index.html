@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS Cheat Sheet</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Matemasie&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <ul class="navigation">
+            <a href="#elements" class="html-link"><li class="nav-list">HTML Elements</a> -</li>
+            <a href="#tables" class="html-link"><li class="nav-list">HTML Tables</a> -</li>
+            <a href="#semantic" class="html-link"><li class="nav-list">Semantic HTML</a> -</li>
+            <a href="#selector-specific" class="css-one-link"><li class="nav-list">CSS Selectors & Specificity</a> -</li>
+            <a href="#box" class="css-two-link"><li class="nav-list">The Box Model</a></li>
+            <a href="#display" class="css-two-link"><li class="nav-list">CSS Display & Positioning</a> -</li>
+            <a href="#typography" class="css-two-link"><li class="nav-list">CSS Typography</a> -</li>
+            <a href="#colors" class="css-two-link"><li class="nav-list">CSS Colors</a> -</li>
+            <a href="#color-list" class="css-one-link"><li class="nav-list">CSS Named Colors List</a></li>
+        </ul>
+    </nav>
+    <h1>Luciel's HTML & CSS Cheat Sheet</h1>
+    <h2 id="elements" class="html">HTML Elements</h2>
+    <p>HTML elements make up what's on a webpage. They're comprised of an opening tab, the content between the tags, and a closing tag, which is the same as the opening tag, but with a forward slash in front of it. HTML Elements can also have attributes added onto them which can provide information or change styling. These attributes are id, which is represented by "#"; class, which is represented by "."; src, which sets an image or video's source; alt, which is exclusive to images and provides alternate text describing it for people with screen readers; href, which links an HTML element to another page or a different part of the page they're on; target, which tells the computer where the link should open; controls, for video only which displays a pause and play button automatically, along with a volume control and fullscreen option; autoplay, only for video, which automatically plays the video once the webpage loads; loop, only for video, which allows the video to continuously play on repeat; and attributes that alter the style of the text within the HTML file, such as width, height, etc.</p>
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">Tag</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="html-tag">< html ></td>
+                <td>HTML/Hypertext Markup Language</td>
+                <td>Declares that the sheet is an HTML sheet.</td>
+            </tr>
+            <tr>
+                <td class="html-tag">< head ></td>
+                <td>Head</td>
+                <td>Contains metadata for the page that isn't displayed on the page itself.</td>
+            </tr>
+            <tr>
+                <td class="html-tag">< title ></td>
+                <td>Title</td>
+                <td>The title that will be displayed in the tab of the webpage when you open it.</td>
+            </tr>
+            <tr>
+                <td class="html-tag">< body ></td>
+                <td>Body</td>
+                <td>Contains all of the visible content of the webpage.</td>
+            </tr>
+            <tr>
+                <td class="html-tag">< h1 > - < h6 ></td>
+                <td>Heading 1 - Heading 6</td>
+                <td>Goes from h1-h6; Used to title pages or sections of pages.</td>
+            </tr>
+            <tr>
+                <td class="html-tag">< p ></td>
+                <td>Paragraph</td>
+                <td>Contains a plain block of text, used for long stretches of text.</td>
+            </tr>
+            <tr>
+                <td class="html-tag">< div ></td>
+                <td>Division</td>
+                <td>Divides the page into sections.</td>
+            </tr>
+            <tr>
+                <td class="html-tag">< span ></td>
+                <td>Span</td>
+                <td>Contains short pieces of text or other HTML.</td>
+            </tr>
+            <tr>
+                <td class="html-tag">< em ></td>
+                <td>Emphasis</td>
+                <td>Emphasizes a piece of text by putting it in <em>italics</em>.</td>
+            </tr>
+            <tr>
+                <td class="html-tag">< strong ></td>
+                <td>Strong</td>
+                <td>Emphasizes a piece of text by putting it in <strong>bold</strong> text.</td>
+            </tr>
+            <tr>
+                <td class="html-tag">< br ></td>
+                <td>Line Break</td>
+                <td>Creates a line break inside of an element.</td>
+            </tr>
+            <tr>
+                <td class="html-tag">< ul ></td>
+                <td>Unordered List</td>
+                <td>A bulletted list of items in no particular order.</td>
+            </tr>
+            <tr>
+                <td class="html-tag">< ol ></td>
+                <td>Ordered List</td>
+                <td>A numbered list of items in a particular order.</td>
+            </tr>
+            <tr>
+                <td class="html-tag">< li ></td>
+                <td>List Item</td>
+                <td>Items listed in an ordered or unordered list.</td>
+            </tr>
+            <tr>
+                <td class="html-tag">< img ></td>
+                <td>Image</td>
+                <td>Allows you to add an image to the page.</td>
+            </tr>
+            <tr>
+                <td class="html-tag">< video ></td>
+                <td>Video</td>
+                <td>Allows you to add a video to the page.</td>
+            </tr>
+            <tr>
+                <td class="html-tag">< a ></td>
+                <td>Anchor</td>
+                <td>Allows you to link other websites or parts of the page itself inside of other elements.</td>
+            </tr>
+            <tr>
+                <td class="html-tag">< link ></td>
+                <td>Link</td>
+                <td>Adds a plain link to the page.</td>
+            </tr>
+            <tr>
+                <td class="html-tag">< !-- ... --></td>
+                <td>Comment</td>
+                <td>Not seen on the page itself; used by developers to make code easier to read and understand.</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2 id="tables" class="html">HTML Tables</h2>
+    <p>HTML tables create a visual way of displaying data in a tabular form. HTML tables also have attributes, like scope, which makes it clear to the program that a heading is for either a column or a row; border, which adds a border between the lines of the table, making it easier to read; and colspan and rowspan, which allow data to span across more than one column or row.</p>
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">Tag</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="html-tag">< table ></td>
+                <td>Table</td>
+                <td>A container for tabular data.</td>
+            </tr>
+            <tr>
+                <td class="html-tag">< thead ></td>
+                <td>Table Head</td>
+                <td>Contains the table's headings.</td>
+            </tr>
+            <tr>
+                <td class="html-tag">< tbody ></td>
+                <td>Table Body</td>
+                <td>Contains the main contents of the table.</td>
+            </tr>
+            <tr>
+                <td class="html-tag">< tr ></td>
+                <td>Table Row</td>
+                <td>Creates a new row in a table.</td>
+            </tr>
+            <tr>
+                <td class="html-tag">< td ></td>
+                <td>Table Data</td>
+                <td>Adds data within the cells of the table.</td>
+            </tr>
+            <tr>
+                <td class="html-tag">< th ></td>
+                <td>Table Heading</td>
+                <td>Describes what data you're looking at.</td>
+            </tr>
+            <tr>
+                <td class="html-tag">< tfoot ></td>
+                <td>Table Footer</td>
+                <td>At the very bottom of the table; usually contains sums, differences, and other data results.</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2 id="semantic" class="html">Semantic HTML</h2>
+    <p>Semantic HTML is HTML that has meaning. The tags represent what part of the text the HTML is making up. Only a few have specific attributes. These attributes are for audio and they are type, which tells the computer what type of audio file it is and controls, which automatically display the audio controls into the browser, such as play and mute.</p>
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">Tag</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="html-tag">< header ></td>
+                <td>Header</td>
+                <td>Container for navigation links or an introductory message.</td>
+            </tr>
+            <tr>
+                <td class="html-tag">< nav ></td>
+                <td>Navigation</td>
+                <td>Used to define menus or a table of contents.</td>
+            </tr>
+            <tr>
+                <td class="html-tag">< main ></td>
+                <td>Main</td>
+                <td>Establishes the main content of a webpage.</td>
+            </tr>
+            <tr>
+                <td class="html-tag">< footer ></td>
+                <td>Footer</td>
+                <td>Contains contact information, copyright information, terms of use, a site map, and/or a reference to top of the page links.</td>
+            </tr>
+            <tr>
+                <td class="html-tag">< article ></td>
+                <td>Article</td>
+                <td>Defines parts of the document with the same theme.</td>
+            </tr>
+            <tr>
+                <td class="html-tag">< section ></td>
+                <td>Section</td>
+                <td>Holds content that can make sense without extra context.</td>
+            </tr>
+            <tr>
+                <td class="html-tag">< aside ></td>
+                <td>Aside</td>
+                <td>Marks a supplemental piece of information that isn't necessary to understand the topic at hand.</td>
+            </tr>
+            <tr>
+                <td class="html-tag">< figure ></td>
+                <td>Figure</td>
+                <td>Used to encapsulate most forms of media like images, diagrams, etc.</td>
+            </tr>
+            <tr>
+                <td class="html-tag">< figcaption ></td>
+                <td>Figure Caption</td>
+                <td>Adds a caption to the figure, usually inside of the figure itself.</td>
+            </tr>
+            <tr>
+                <td class="html-tag">< embed ></td>
+                <td>Embed</td>
+                <td>Able to embed any media content into the page.</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2 id="selectors-specific" class="css-one">CSS Selectors & Specificity</h2>
+    <p>CSS selectors are the part of CSS code that targets a piece of HTML code. It's the first thing you type when getting ready to make a CSS declaration. There are several different types of selectors that CSS uses, and each one has a different specificity in the code. The specificity of a selector tells the browser which CSS style to apply first.</p>
+    <ul>
+        <li><strong>Universal</strong>: Universal selectors target every HTML element in the HTML document. This is the least specific selector and is very easy to override with other selectors.</li>
+        <li><strong>Type</strong>: Type selectors exclusively use HTML elements, but without the brackets around them. It's also sometimes called the "tag name selector" or "element selector". This is one of the least specific selector and will be overshadowed by almost any other selector.</li>
+        <li><strong>Attribute</strong>: The attribute selector selects attributes within elements and changes their appearance on the page.</li>
+        <li><strong>Class</strong>: Class selectors select elements of a certain class, which is contained within the tag as an attribute. You can apply multiple classes to a singular element by putting a space inbetween them. Classes can be applied to many different elements and are slightly more specific than the <strong>Type</strong> selector.</li>
+        <li><strong>ID</strong>: ID selectors are almost the most specific selector you can use in CSS. It selects all elements of a certain ID. ID's are only able to be applied to one element, making it very specific.</li>
+        <li><strong>!important</strong>: Adding this into your CSS declaration will prioritize that stylization over any other stylization. Use sparingly.</li>
+        <li><strong>Pseudo-Class</strong>: Pseudo-Class selectors are applied after one of the other selectors to change the appearance of an element after an interaction. These include, :hover, :focus, :visited, :disabled, and :active.</li>
+        <li><strong>Chaining</strong>: Chaining allows you to give an element more than one CSS selector at a time.</li>
+        <li><strong>Descendant Combinator</strong>: This allows you to only select elements within a different element, or the "children" of that element.</li>
+        <li><strong>Multiple Selectors</strong>: This allows you to choose multiple selectors at a time to change what they look like. You do this by simply adding a comma between the selectors.</li>
+    </ul>
+    <h2 id="box" class="css-two">The Box Model</h2>
+    <p>The Box Model is comprised of set properties that tell you how much space an element takes up on a page.</p>
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">Property</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="css-tag">height</td>
+                <td>Height</td>
+                <td>Specifies the height of an element on a page</td>
+            </tr>
+            <tr>
+                <td class="css-tag">width</td>
+                <td>Width</td>
+                <td>Specifies the width of an element on a page.</td>
+            </tr>
+            <tr>
+                <td class="css-tag">border</td>
+                <td>Border</td>
+                <td>A line that surrounds an element; Able to change the width, style, and color.</td>
+            </tr>
+            <tr>
+                <td class="css-tag">border-radius</td>
+                <td>Border Radius</td>
+                <td>Modifies the roundness of the corners of an element's border.</td>
+            </tr>
+            <tr>
+                <td class="css-tag">padding</td>
+                <td>Padding</td>
+                <td>The spacing between the content of an element and the borders of the element.</td>
+            </tr>
+            <tr>
+                <td class="css-tag">margin</td>
+                <td>Margin</td>
+                <td>The spacing between the borders of an element and the edge of the page.</td>
+            </tr>
+            <tr>
+                <td class="css-tag">min-width</td>
+                <td>Minimum Width</td>
+                <td>The minimum width you want an element to be displayed with when the page is made smaller.</td>
+            </tr>
+            <tr>
+                <td class="css-tag">min-height</td>
+                <td>Minimum Height</td>
+                <td>The minimum height you want an element to be displayed with when the page is made smaller.</td>
+            </tr>
+            <tr>
+                <td class="css-tag">max-width</td>
+                <td>Maximum Width</td>
+                <td>The maximum width you want an element to be displayed with when the page is made bigger.</td>
+            </tr>
+            <tr>
+                <td class="css-tag">max-height</td>
+                <td>Maximum Height</td>
+                <td>The maximum height you want an element to be displayed with when the page is made bigger.</td>
+            </tr>
+            <tr>
+                <td class="css-tag">overflow</td>
+                <td>Overflow</td>
+                <td>Controls what happens when content spills out of the parent element. Either hidden, scroll, or visible.</td>
+            </tr>
+            <tr>
+                <td class="css-tag">visibility</td>
+                <td>Visibility</td>
+                <td>Decides whether an element is visible or not. Either hidden, visible, or collapse.</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2 id="display" class="css-two">CSS Display & Positioning</h2>
+    <p>Display and Positioning in CSS, like you'd expect, changes the display or position of HTML elements. Positions can be specified in 5 different ways. Static, the default position; Relative, where you reposition the element relative to its spot on the page; Absolute, which will basically cause all other elements on the page to act like it isn't there; Fixed, which fixes an element to a spot on the page so that it still appears even when the user scrolls down; and Sticky, which is similar to fixed, but sticks an element to a part of the page as you scroll down. There are also a few different displays. Inline, which allows two elements to be displayed next to each other and completely surrounds the element itself and doesn't stretch outside the element and cannot have their height and width altered; Block, which aren't displayed next to any other element and fill the entire width of the page by default, however you can alter height and width.; and Inline-Block, which allows elements to be displayed side by side and the height and width can be altered.</p>
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">Property</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="css-tag">position</td>
+                <td>Position</td>
+                <td>Changes the position of where an element sits on a page.</td>
+            </tr>
+            <tr>
+                <td class="css-tag">z-index</td>
+                <td>Z-Index</td>
+                <td>Specifies how far forward or how far back an element should appear on a page.</td>
+            </tr>
+            <tr>
+                <td class="css-tag">display</td>
+                <td>Display</td>
+                <td>Determines whether or not an element can share space with another element.</td>
+            </tr>
+            <tr>
+                <td class="css-tag">float</td>
+                <td>Float</td>
+                <td>Moves an element as far left or right as possible on a page.</td>
+            </tr>
+            <tr>
+                <td class="css-tag">clear</td>
+                <td>Clear</td>
+                <td>Specifies how elements should behave when they bump into each other on the page.</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2 id="typography" class="css-two">CSS Typography</h2>
+    <p>Typography in CSS is the way the text is positioned and displayed. There are a few default fonts that come on most computers including Times New Roman, Courier, Impact, Arial, Georgia, etc. However, these options can be limiting. To add a font of your choosing to your website, either link it with a < link > tag in the HTML sheet or link it with the @font-face property in the CSS sheet.</p>
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">Property</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="css-tag">font-family</td>
+                <td>Font Family</td>
+                <td>Changes what font a text element has. Also adds fallback fonts.</td>
+            </tr>
+            <tr>
+                <td class="css-tag">font-weight</td>
+                <td>Font Weight</td>
+                <td>Changes how thick or thin the text element appears.</td>
+            </tr>
+            <tr>
+                <td class="css-tag">font-style</td>
+                <td>Font Style</td>
+                <td>Changes whether the text is <strong>bold</strong>, <em>italic</em>, or normal.</td>
+            </tr>
+            <tr>
+                <td class="css-tag">text-transform</td>
+                <td>Text Transformation</td>
+                <td>Transforms the text to be displayed as all UPPERCASE, all lowercase, or Normal</td>
+            </tr>
+            <tr>
+                <td class="css-tag">letter-spacing</td>
+                <td>Letter Spacing</td>
+                <td>Changes the amount of space between letters in a text element.</td>
+            </tr>
+            <tr>
+                <td class="css-tag">word-spacing</td>
+                <td>Word Spacing</td>
+                <td>Changes the amount of space between words in a text element.</td>
+            </tr>
+            <tr>
+                <td class="css-tag">line-height</td>
+                <td>Line Height</td>
+                <td>Changes the amount of space between each line containing text.</td>
+            </tr>
+            <tr>
+                <td class="css-tag">text-align</td>
+                <td>Text Alignment</td>
+                <td>Changes how the text is aligned on screen to the left, right, center, or justify.</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2 id="colors" class="css-two">CSS Colors</h2>
+    <p>Colors in CSS can be displayed in a few different ways. There's named colors, default colors that have been named in CSS; RGB, displayed as rgb(0, 0, 0), which uses decimal numbers between 0 and 255 to represent the amount of red, green, and blue a color has; HSL, displayed as hsl(0, 0, 0), which represents the hue, saturation, and lightness of a color and has the first number be a number between 0 and 360, while the other two numbers are percentages; and Hexidecimal, which is where the amount of red, green, and blue in a color are represented by two letters/numbers each, in the form of #AA0011. Adding an "a" onto the end of RGB or HSL will add a value called "alpha", which allows you to alter the opacity in the color itself.</p>
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">Property</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th>
+            </tr>
+            <tr>
+                <td class="css-tag">color</td>
+                <td>Color</td>
+                <td>Changes the foreground color of an element.</td>
+            </tr>
+            <tr>
+                <td class="css-tag">background-color</td>
+                <td>Background Color</td>
+                <td>Changes the background color of an element.</td>
+            </tr>
+            <tr>
+                <td class="css-tag">opacity</td>
+                <td>Opacity</td>
+                <td>Changes how see-through an element is.</td>
+            </tr>
+        </thead>
+    </table>
+    <h2 id="color-list" class="css-one">CSS Named Colors List</h2>
+    <p>A list of all 140 named colors in CSS.</p>
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Color</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Alice Blue</td>
+                <td style="background-color: aliceblue;"></td>
+            </tr>
+            <tr>
+                <td>Antique White</td>
+                <td style="background-color: antiquewhite;"></td>
+            </tr>
+            <tr>
+                <td>Aqua</td>
+                <td style="background-color: aqua;"></td>
+            </tr>
+            <tr>
+                <td>Aquamarine</td>
+                <td style="background-color: aquamarine;"></td>
+            </tr>
+            <tr>
+                <td>Azure</td>
+                <td style="background-color: azure;"></td>
+            </tr>
+            <tr>
+                <td>Beige</td>
+                <td style="background-color: beige ;"></td>
+            </tr>
+            <tr>
+                <td>Bisque</td>
+                <td style="background-color: bisque;"></td>
+            </tr>
+            <tr>
+                <td>Black</td>
+                <td style="background-color: black;"></td>
+            </tr>
+            <tr>
+                <td>Blanched Almond</td>
+                <td style="background-color: blanchedalmond;"></td>
+            </tr>
+            <tr>
+                <td>Blue</td>
+                <td style="background-color: blue;"></td>
+            </tr>
+            <tr>
+                <td>Blue Violet</td>
+                <td style="background-color: blueviolet;"></td>
+            </tr>
+            <tr>
+                <td>Brown</td>
+                <td style="background-color: brown;"></td>
+            </tr>
+            <tr>
+                <td>Burly Wood</td>
+                <td style="background-color: burlywood;"></td>
+            </tr>
+            <tr>
+                <td>Cadet Blue</td>
+                <td style="background-color: cadetblue;"></td>
+            </tr>
+            <tr>
+                <td>Chartreuse</td>
+                <td style="background-color: chartreuse;"></td>
+            </tr>
+            <tr>
+                <td>Chocolate</td>
+                <td style="background-color: chocolate;"></td>
+            </tr>
+            <tr>
+                <td>Coral</td>
+                <td style="background-color: coral;"></td>
+            </tr>
+            <tr>
+                <td>Cornflower Blue</td>
+                <td style="background-color: cornflowerblue;"></td>
+            </tr>
+            <tr>
+                <td>Cornsilk</td>
+                <td style="background-color: cornsilk;"></td>
+            </tr>
+            <tr>
+                <td>Crimson</td>
+                <td style="background-color: crimson;"></td>
+            </tr>
+            <tr>
+                <td>Cyan</td>
+                <td style="background-color: cyan;"></td>
+            </tr>
+            <tr>
+                <td>Dark Blue</td>
+                <td style="background-color: darkblue;"></td>
+            </tr>
+            <tr>
+                <td>Dark Cyan</td>
+                <td style="background-color: darkcyan;"></td>
+            </tr>
+            <tr>
+                <td>Dark Golden Rod</td>
+                <td style="background-color: darkgoldenrod;"></td>
+            </tr>
+            <tr>
+                <td>Dark Gray</td>
+                <td style="background-color: darkgray;"></td>
+            </tr>
+            <tr>
+                <td>Dark Grey</td>
+                <td style="background-color: darkgrey;"></td>
+            </tr>
+            <tr>
+                <td>Dark Green</td>
+                <td style="background-color: darkgreen;"></td>
+            </tr>
+            <tr>
+                <td>Dark Khaki</td>
+                <td style="background-color: darkkhaki;"></td>
+            </tr>
+            <tr>
+                <td>Dark Magenta</td>
+                <td style="background-color: darkmagenta;"></td>
+            </tr>
+            <tr>
+                <td>Dark Olive Green</td>
+                <td style="background-color: darkolivegreen;"></td>
+            </tr>
+            <tr>
+                <td>Dark Orange</td>
+                <td style="background-color: darkorange;"></td>
+            </tr>
+            <tr>
+                <td>Dark Orchid</td>
+                <td style="background-color: darkorchid;"></td>
+            </tr>
+            <tr>
+                <td>Dark Red</td>
+                <td style="background-color: darkred;"></td>
+            </tr>
+            <tr>
+                <td>Dark Salmon</td>
+                <td style="background-color: darksalmon;"></td>
+            </tr>
+            <tr>
+                <td>Dark Sea Green</td>
+                <td style="background-color: darkseagreen;"></td>
+            </tr>
+            <tr>
+                <td>Dark Slate Blue</td>
+                <td style="background-color: darkslateblue;"></td>
+            </tr>
+            <tr>
+                <td>Dark Slate Gray</td>
+                <td style="background-color: darkslategray;"></td>
+            </tr>
+            <tr>
+                <td>Dark Slate Grey</td>
+                <td style="background-color: darkslategrey;"></td>
+            </tr>
+            <tr>
+                <td>Dark Turquoise</td>
+                <td style="background-color: darkturquoise;"></td>
+            </tr>
+            <tr>
+                <td>Dark Violet</td>
+                <td style="background-color: darkviolet;"></td>
+            </tr>
+            <tr>
+                <td>Deep Pink</td>
+                <td style="background-color: deeppink;"></td>
+            </tr>
+            <tr>
+                <td>Deep Sky Blue</td>
+                <td style="background-color: deepskyblue;"></td>
+            </tr>
+            <tr>
+                <td>Dim Gray</td>
+                <td style="background-color: dimgray;"></td>
+            </tr>
+            <tr>
+                <td>Dim Grey</td>
+                <td style="background-color: dimgrey;"></td>
+            </tr>
+            <tr>
+                <td>Dodger Blue</td>
+                <td style="background-color: dodgerblue;"></td>
+            </tr>
+            <tr>
+                <td>Fire Brick</td>
+                <td style="background-color: firebrick;"></td>
+            </tr>
+            <tr>
+                <td>Floral White</td>
+                <td style="background-color: floralwhite;"></td>
+            </tr>
+            <tr>
+                <td>Forest Green</td>
+                <td style="background-color: forestgreen;"></td>
+            </tr>
+            <tr>
+                <td>Fuschia</td>
+                <td style="background-color: fuchsia;"></td>
+            </tr>
+            <tr>
+                <td>Gainsboro</td>
+                <td style="background-color: gainsboro;"></td>
+            </tr>
+            <tr>
+                <td>Ghost White</td>
+                <td style="background-color: ghostwhite;"></td>
+            </tr>
+            <tr>
+                <td>Gold</td>
+                <td style="background-color: gold;"></td>
+            </tr>
+            <tr>
+                <td>Golden Rod</td>
+                <td style="background-color: goldenrod;"></td>
+            </tr>
+            <tr>
+                <td>Gray</td>
+                <td style="background-color: gray;"></td>
+            </tr>
+            <tr>
+                <td>Grey</td>
+                <td style="background-color: grey;"></td>
+            </tr>
+            <tr>
+                <td>Green</td>
+                <td style="background-color: green;"></td>
+            </tr>
+            <tr>
+                <td>Green Yellow</td>
+                <td style="background-color: greenyellow;"></td>
+            </tr>
+            <tr>
+                <td>Honey Dew</td>
+                <td style="background-color: honeydew;"></td>
+            </tr>
+            <tr>
+                <td>Hot Pink</td>
+                <td style="background-color: hotpink;"></td>
+            </tr>
+            <tr>
+                <td>Indian Red</td>
+                <td style="background-color: indianred;"></td>
+            </tr>
+            <tr>
+                <td>Indigo</td>
+                <td style="background-color: indigo;"></td>
+            </tr>
+            <tr>
+                <td>Ivory</td>
+                <td style="background-color: ivory;"></td>
+            </tr>
+            <tr>
+                <td>Khaki</td>
+                <td style="background-color: khaki;"></td>
+            </tr>
+            <tr>
+                <td>Lavender</td>
+                <td style="background-color: lavender;"></td>
+            </tr>
+            <tr>
+                <td>Lavender Blush</td>
+                <td style="background-color: lavenderblush;"></td>
+            </tr>
+            <tr>
+                <td>Lawn Green</td>
+                <td style="background-color: lawngreen;"></td>
+            </tr>
+            <tr>
+                <td>Lemon Chiffon</td>
+                <td style="background-color: lemonchiffon;"></td>
+            </tr>
+            <tr>
+                <td>Light Blue</td>
+                <td style="background-color: lightblue;"></td>
+            </tr>
+            <tr>
+                <td>Light Coral</td>
+                <td style="background-color: lightcoral;"></td>
+            </tr>
+            <tr>
+                <td>Light Cyan</td>
+                <td style="background-color: lightcyan;"></td>
+            </tr>
+            <tr>
+                <td>Light Golden Rod Yellow</td>
+                <td style="background-color: lightgoldenrodyellow;"></td>
+            </tr>
+            <tr>
+                <td>Light Gray</td>
+                <td style="background-color: lightgray;"></td>
+            </tr>
+            <tr>
+                <td>Light Grey</td>
+                <td style="background-color: lightgrey;"></td>
+            </tr>
+            <tr>
+                <td>Light Green</td>
+                <td style="background-color: lightgreen;"></td>
+            </tr>
+            <tr>
+                <td>Light Pink</td>
+                <td style="background-color: lightpink;"></td>
+            </tr>
+            <tr>
+                <td>Light Salmon</td>
+                <td style="background-color: lightsalmon;"></td>
+            </tr>
+            <tr>
+                <td>Light Sea Green</td>
+                <td style="background-color: lightseagreen;"></td>
+            </tr>
+            <tr>
+                <td>Light Sky Blue</td>
+                <td style="background-color: lightskyblue;"></td>
+            </tr>
+            <tr>
+                <td>Light Slate Gray</td>
+                <td style="background-color: lightslategray;"></td>
+            </tr>
+            <tr>
+                <td>Light Slate Grey</td>
+                <td style="background-color: lightslategrey;"></td>
+            </tr>
+            <tr>
+                <td>Light Steel Blue</td>
+                <td style="background-color: lightsteelblue;"></td>
+            </tr>
+            <tr>
+                <td>Light Yellow</td>
+                <td style="background-color: lightyellow;"></td>
+            </tr>
+            <tr>
+                <td>Lime</td>
+                <td style="background-color: lime;"></td>
+            </tr>
+            <tr>
+                <td>Lime Green</td>
+                <td style="background-color: limegreen;"></td>
+            </tr>
+            <tr>
+                <td>Linen</td>
+                <td style="background-color: linen;"></td>
+            </tr>
+            <tr>
+                <td>Magenta</td>
+                <td style="background-color: magenta;"></td>
+            </tr>
+            <tr>
+                <td>Maroon</td>
+                <td style="background-color: maroon;"></td>
+            </tr>
+            <tr>
+                <td>Medium Aquamarine</td>
+                <td style="background-color: mediumaquamarine;"></td>
+            </tr>
+            <tr>
+                <td>Medium Blue</td>
+                <td style="background-color: mediumblue;"></td>
+            </tr>
+            <tr>
+                <td>Medium Orchid</td>
+                <td style="background-color: mediumorchid;"></td>
+            </tr>
+            <tr>
+                <td>Medium Purple</td>
+                <td style="background-color: mediumpurple;"></td>
+            </tr>
+            <tr>
+                <td>Medium Sea Green</td>
+                <td style="background-color: mediumseagreen;"></td>
+            </tr>
+            <tr>
+                <td>Medium Slate Blue</td>
+                <td style="background-color: mediumslateblue;"></td>
+            </tr>
+            <tr>
+                <td>Medium Spring Green</td>
+                <td style="background-color: mediumspringgreen;"></td>
+            </tr>
+            <tr>
+                <td>Medium Turquoise</td>
+                <td style="background-color: mediumturquoise;"></td>
+            </tr>
+            <tr>
+                <td>Medium Violet Red</td>
+                <td style="background-color: mediumvioletred;"></td>
+            </tr>
+            <tr>
+                <td>Midnight Blue</td>
+                <td style="background-color: midnightblue;"></td>
+            </tr>
+            <tr>
+                <td>Mint Cream</td>
+                <td style="background-color: mintcream;"></td>
+            </tr>
+            <tr>
+                <td>Misty Rose</td>
+                <td style="background-color: mistyrose;"></td>
+            </tr>
+            <tr>
+                <td>Moccasin</td>
+                <td style="background-color: moccasin;"></td>
+            </tr>
+            <tr>
+                <td>Navajo White</td>
+                <td style="background-color: navajowhite;"></td>
+            </tr>
+            <tr>
+                <td>Navy</td>
+                <td style="background-color: navy;"></td>
+            </tr>
+            <tr>
+                <td>Old Lace</td>
+                <td style="background-color: oldlace;"></td>
+            </tr>
+            <tr>
+                <td>Olive</td>
+                <td style="background-color: olive;"></td>
+            </tr>
+            <tr>
+                <td>Olive Drab</td>
+                <td style="background-color: olivedrab;"></td>
+            </tr>
+            <tr>
+                <td>Orange</td>
+                <td style="background-color: orange;"></td>
+            </tr>
+            <tr>
+                <td>Orange Red</td>
+                <td style="background-color: orangered;"></td>
+            </tr>
+            <tr>
+                <td>Orchid</td>
+                <td style="background-color: orchid;"></td>
+            </tr>
+            <tr>
+                <td>Pale Golden Rod</td>
+                <td style="background-color: palegoldenrod;"></td>
+            </tr>
+            <tr>
+                <td> Pale Green</td>
+                <td style="background-color: palegreen;"></td>
+            </tr>
+            <tr>
+                <td>Pale Turquoise</td>
+                <td style="background-color: paleturquoise;"></td>
+            </tr>
+            <tr>
+                <td>Pale Violet Red</td>
+                <td style="background-color: palevioletred;"></td>
+            </tr>
+            <tr>
+                <td>Papaya Whip</td>
+                <td style="background-color: papayawhip;"></td>
+            </tr>
+            <tr>
+                <td>Peach Puff</td>
+                <td style="background-color: peachpuff;"></td>
+            </tr>
+            <tr>
+                <td>Peru</td>
+                <td style="background-color: peru;"></td>
+            </tr>
+            <tr>
+                <td>Pink</td>
+                <td style="background-color: pink;"></td>
+            </tr>
+            <tr>
+                <td>Plum</td>
+                <td style="background-color: plum;"></td>
+            </tr>
+            <tr>
+                <td>Powder Blue</td>
+                <td style="background-color: powderblue;"></td>
+            </tr>
+            <tr>
+                <td>Purple</td>
+                <td style="background-color: purple;"></td>
+            </tr>
+            <tr>
+                <td>Rebecca Purple</td>
+                <td style="background-color: rebeccapurple;"></td>
+            </tr>
+            <tr>
+                <td>Red</td>
+                <td style="background-color: red;"></td>
+            </tr>
+            <tr>
+                <td>Rosy Brown</td>
+                <td style="background-color: rosybrown;"></td>
+            </tr>
+            <tr>
+                <td>Royal Blue</td>
+                <td style="background-color: royalblue;"></td>
+            </tr>
+            <tr>
+                <td>Saddle Brown</td>
+                <td style="background-color: saddlebrown;"></td>
+            </tr>
+            <tr>
+                <td>Salmon</td>
+                <td style="background-color: salmon;"></td>
+            </tr>
+            <tr>
+                <td>Sandy Brown</td>
+                <td style="background-color: sandybrown;"></td>
+            </tr>
+            <tr>
+                <td>Sea Green</td>
+                <td style="background-color: seagreen;"></td>
+            </tr>
+            <tr>
+                <td>Seashell</td>
+                <td style="background-color: seashell;"></td>
+            </tr>
+            <tr>
+                <td>Sienna</td>
+                <td style="background-color: sienna;"></td>
+            </tr>
+            <tr>
+                <td>Silver</td>
+                <td style="background-color: silver;"></td>
+            </tr>
+            <tr>
+                <td>Sky Blue</td>
+                <td style="background-color: skyblue;"></td>
+            </tr>
+            <tr>
+                <td>Slate Blue</td>
+                <td style="background-color: slateblue;"></td>
+            </tr>
+            <tr>
+                <td>Slate Gray</td>
+                <td style="background-color: slategray;"></td>
+            </tr>
+            <tr>
+                <td>Slate Grey</td>
+                <td style="background-color: slategrey;"></td>
+            </tr>
+            <tr>
+                <td>Snow</td>
+                <td style="background-color: snow;"></td>
+            </tr>
+            <tr>
+                <td>Spring Green</td>
+                <td style="background-color: springgreen;"></td>
+            </tr>
+            <tr>
+                <td>Steel Blue</td>
+                <td style="background-color: steelblue;"></td>
+            </tr>
+            <tr>
+                <td>Tan</td>
+                <td style="background-color: tan;"></td>
+            </tr>
+            <tr>
+                <td>Teal</td>
+                <td style="background-color: teal;"></td>
+            </tr>
+            <tr>
+                <td>Thistle</td>
+                <td style="background-color: thistle;"></td>
+            </tr>
+            <tr>
+                <td>Tomato</td>
+                <td style="background-color: tomato;"></td>
+            </tr>
+            <tr>
+                <td>Turquoise</td>
+                <td style="background-color: turquoise;"></td>
+            </tr>
+            <tr>
+                <td>Violet</td>
+                <td style="background-color: violet;"></td>
+            </tr>
+            <tr>
+                <td>Wheat</td>
+                <td style="background-color: wheat;"></td>
+            </tr>
+            <tr>
+                <td>White</td>
+                <td style="background-color: white;"></td>
+            </tr>
+            <tr>
+                <td>White Smoke</td>
+                <td style="background-color: whitesmoke;"></td>
+            </tr>
+            <tr>
+                <td>Yellow</td>
+                <td style="background-color: yellow;"></td>
+            </tr>
+            <tr>
+                <td>Yellow Green</td>
+                <td style="background-color: yellowgreen;"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
